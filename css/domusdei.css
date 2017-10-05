@@ -4,7 +4,7 @@ html, body{
 }
 
 header{
-	background-color: #f7e34f;
+	background-color: #f7e34f; /*you can do a background image and you can reference up one folder to 'img' by typing '..' For example: "../img/image.jpg"; */
 	padding: 0px; /*gives space around header you don't need all but it specifcies direction*/
 	text-align: center;
 }
@@ -29,6 +29,20 @@ header img{
 
 img.big-image{
 	max-width: 100%
+
+}
+
+.big-image{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  position: relative;
+  backface-visibility: hidden;
+}
+.content:hover .big-image{
+	opacity: 0.3;
 }
 
 p.caption{
@@ -48,6 +62,10 @@ a{
 	text-decoration: none;
 }
 
+a:hover{ /*changes when I hover over links*/
+	color: blue;
+}
+
 footer{
 	padding: 1px 0px;
 	background-color: #f7e34f;
@@ -57,7 +75,7 @@ footer{
 footer ul{
 	text-align: center;
 }
-footer ul li{ /*I made all lines in unordered lists in the footer in the middle with spaces between the lines*/
+footer ul li{ /*I made all lines in unordered lists in the footer display as blocks with spaces between the lines*/
 	display: inline-block;
 	margin: 0 10px;
 }
