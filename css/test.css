@@ -1,0 +1,34 @@
+/*Sets the style that is referenced in the csstest.html file
+
+body{
+	background-color: lightgrey;
+}
+
+h1{
+	color: orange;
+	font-size: 90px;
+	text-decoration: underline;
+}
+
+/*Note on override weighting: High -> inline command, #-ID, .-class, h2-tag <- Low*/
+
+h2{
+	font-size: 40px;
+	color: blue;
+}
+#first{ /*Only one element can have this ID, see Heading 1-1*/
+	font-size: 150px;
+}
+#last{
+	font-size: 5px;
+}
+.small{
+	font-size: 12px; /*Makes all 'small' classes a certain style, indepedent of h1 or h2 above... This overrides!*/
+}
+span{
+	font-style: italic;
+}
+
+h2 span{ /*changes all span inside h2*/
+	text-decoration: line-through;
+}
